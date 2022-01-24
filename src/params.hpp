@@ -8,9 +8,11 @@
 struct Params
 {
     double duration;
+    int init_population_size;
     double mutation_factor;
     double crossover_factor;
     Params();
+    void setParams();
     void showParams();
 };
 

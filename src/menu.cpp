@@ -4,6 +4,7 @@ void menu()
 {
 
     std::unique_ptr<Graph> graph;
+    Params params;
     std::string fileName;
 
     int control = -1;
@@ -42,7 +43,7 @@ void menu()
 
             break;
         case 6:
-
+            genetic_algorithm_tsp(*graph, params);
             break;
         case 7:
             loop = false;
